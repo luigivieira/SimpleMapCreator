@@ -66,7 +66,7 @@ Image genMap(vector<Pixel> colors, uint width, uint height, uint iterations = 10
 	{
 		for(uint y = 0; y < height; y++)
 		{
-			uint c = random(0, 1);
+			uint c = random(0, colors.size()-1);
 			map.pixel(x, y) = colors[c];
 		}
 	}
